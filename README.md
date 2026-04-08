@@ -49,6 +49,14 @@ Running SupaMap directly from the cloned repository ensures you always have the 
 
 ## 📦 Building an Executable
 
-If you wish to deploy SupaMap entirely isolated to run natively mapped as an executable `SupaMap.exe` safely deploying to friends securely tracking strictly limits explicitly cleanly safely safely natively:
+SupaMap is fully cross-platform and can be explicitly packaged into a strictly standalone application (requiring no Python installation for the end user) on both Windows and macOS natively!
 
-Double click `build.bat` securely mapping limits out natively automatically pushing assets properly securely bounds properly dynamically!
+**For Windows (`.exe`):**
+Double-click the `build.bat` file in the root directory. It will generate a standalone `SupaMap.exe` application inside the `dist/` folder.
+
+**For macOS (`.app`):**
+Open your terminal and run:
+```bash
+sh build_mac.sh
+```
+It will automatically map the macOS Subprocess hooks and yield a fully native `SupaMap.app` packaged directly into your `dist/` folder!
