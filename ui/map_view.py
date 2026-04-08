@@ -42,7 +42,15 @@ class SupaWebPage(QWebEnginePage):
                 try:
                     poi_data = get_poi(int(poi_id))
                     if poi_data and os.path.exists(poi_data['filepath']):
-                        os.startfile(os.path.normpath(poi_data['filepath']))
+                        import sys, subprocess
+                        filepath_norm = os.path.normpath(poi_data['filepath'])
+                        if sys.platform == "win32":
+                            os.startfile(filepath_norm)
+                        elif sys.platform == "darwin":
+                            subprocess.call(["open", filepath_norm])
+                        else:
+                            subprocess.call(["xdg-open", filepath_norm])
+                            
                         print(f"[Bridge] Launched Native Video Player for {poi_id}")
                 except Exception as e:
                     print(f"[Bridge] Failed launching video: {e}")
