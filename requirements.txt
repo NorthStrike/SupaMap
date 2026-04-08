@@ -1,0 +1,13 @@
+PySide6
+folium
+gpxpy
+pandas
+geopandas
+Shapely
+Pillow
+exifread
+mutagen
+PyExifTool
+matplotlib
+pyproj
+simplekml

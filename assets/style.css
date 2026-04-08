@@ -1,0 +1,159 @@
+/* Premium Modern Dark Mode - Slate & Vibrant Blue */
+
+QMainWindow {
+    background-color: #0f172a; /* Slate 900 */
+}
+
+QFrame#Sidebar {
+    background-color: #1e293b; /* Slate 800 */
+    border-right: 1px solid #334155; /* Slate 700 */
+}
+
+/* Typography Enhancements */
+QLabel {
+    color: #f8fafc; /* Slate 50 */
+    font-family: 'Segoe UI', 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+QLabel[role="title"] { 
+    font-size: 24px;
+    font-weight: 800;
+    color: #f1f5f9;
+    margin-bottom: 5px;
+}
+
+QLabel[role="subtitle"] { 
+    font-size: 14px;
+    color: #94a3b8; /* Slate 400 */
+    margin-bottom: 20px;
+}
+
+QLabel[role="header"] { 
+    font-size: 16px;
+    font-weight: bold;
+    color: #f8fafc;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Vibrant Action Buttons */
+QPushButton {
+    background-color: #3b82f6; /* Blue 500 */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+QPushButton:hover {
+    background-color: #2563eb; /* Blue 600 */
+}
+
+QPushButton:pressed {
+    background-color: #1d4ed8; /* Blue 700 */
+}
+
+/* High Contrast Checkboxes */
+QCheckBox {
+    color: #cbd5e1; /* Slate 300 */
+    font-size: 13px;
+    font-family: 'Segoe UI', 'Inter', sans-serif;
+    spacing: 10px;
+    padding: 4px 0;
+}
+
+QCheckBox:hover {
+    color: #f8fafc;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px; /* Perfect Circular Pill */
+    border: 2px solid #475569;
+    background: #0f172a;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #8b5cf6; /* Electric Violet Ring */
+    background: #1e293b;
+}
+
+QCheckBox::indicator:checked {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #8b5cf6, stop: 1 #4c1d95); /* Cosmic Purple Gradient */
+    border: 2px solid #a78bfa;
+}
+
+/* List Widget Matrix */
+QListWidget {
+    background-color: #0f172a; /* Slate 900 embedding */
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #cbd5e1;
+    font-size: 11px;
+    font-family: 'Segoe UI', 'Inter', sans-serif;
+    padding: 3px;
+}
+
+QListWidget::item {
+    padding: 4px;
+    border-radius: 4px;
+    border-bottom: 1px solid #1e293b;
+}
+
+QListWidget::item:hover {
+    background-color: #1e293b;
+    color: #f8fafc;
+}
+
+QListWidget::item:selected {
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Premium Gradient Button Subclasses */
+QPushButton#BtnGreen {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #10b981, stop: 1 #064e3b);
+    border: 1px solid #059669;
+}
+QPushButton#BtnGreen:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #34d399, stop: 1 #064e3b);
+}
+
+QPushButton#BtnBlue {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #3b82f6, stop: 1 #172554);
+    border: 1px solid #2563eb;
+}
+QPushButton#BtnBlue:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #60a5fa, stop: 1 #172554);
+}
+
+QPushButton#BtnYellow {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #eab308, stop: 1 #713f12);
+    border: 1px solid #ca8a04;
+    color: white;
+}
+QPushButton#BtnYellow:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #facc15, stop: 1 #713f12);
+}
+
+QPushButton#BtnRed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #ef4444, stop: 1 #450a0a);
+    border: 1px solid #dc2626;
+}
+QPushButton#BtnRed:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #f87171, stop: 1 #450a0a);
+}
+
+QPushButton#BtnDark {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #475569, stop: 1 #020617);
+    border: 1px solid #334155;
+}
+QPushButton#BtnDark:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #64748b, stop: 1 #020617);
+}

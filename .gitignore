@@ -1,0 +1,15 @@
+# Environments
+venv/
+__pycache__/
+*.pyc
+
+# SupaMap Persistent User Data
+# We do not want to upload the user's private maps, photos, and databases!
+project_data/
+data/app_state.sqlite
+data/
+
+# PyInstaller Build Files
+build/
+dist/
+*.spec
